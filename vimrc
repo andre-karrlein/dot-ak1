@@ -6,52 +6,44 @@ filetype off                   " required!
 let mapleader=","
 
 " Vundle init
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim/
 
-" Require Vundle
-try
-    call vundle#rc()
-catch
-    echohl Error | echo "Vundle is not installed. Run 'cd ~/.vim/ && git submodule init && git submodule update'" | echohl None
-endtry
-
-
-"{{{ Vundle Bundles!
-if exists(':Bundle')
-    Bundle 'gmarik/vundle'
+call vundle#begin()
+ "{{{ Vundle Bundles!
+    Plugin 'VundleVim/Vundle.vim'
 
     " Plugins
-    Bundle 'joonty/vim-do'
-    Bundle 'Lokaltog/vim-easymotion'
-    Bundle 'scrooloose/nerdtree.git'
-    Bundle 'joonty/vim-sauce.git'
-    Bundle 'joonty/vdebug.git'
-    Bundle 'joonty/vim-taggatron.git'
-    Bundle 'tpope/vim-fugitive.git'
-    Bundle 'tpope/vim-commentary.git'
-    Bundle 'tpope/vim-endwise.git'
-    Bundle 'ervandew/supertab.git'
-    Bundle 'joonty/vim-tork.git'
-    Bundle 'rking/ag.vim'
-    Bundle 'roman/golden-ratio'
-    Bundle 'pelodelfuego/vim-swoop'
-    Bundle 'ctrlpvim/ctrlp.vim'
-    Bundle 'itchyny/lightline.vim'
-    Bundle 'godlygeek/tabular'
-    Bundle 'joonty/vim-phpqa.git'
-    Bundle 'shawncplus/phpcomplete.vim'
+    Plugin 'joonty/vim-do'
+    Plugin 'Lokaltog/vim-easymotion'
+    Plugin 'scrooloose/nerdtree.git'
+    Plugin 'joonty/vim-sauce.git'
+    Plugin 'joonty/vdebug.git'
+    Plugin 'joonty/vim-taggatron.git'
+    Plugin 'tpope/vim-fugitive.git'
+    Plugin 'tpope/vim-commentary.git'
+    Plugin 'tpope/vim-endwise.git'
+    Plugin 'ervandew/supertab.git'
+    Plugin 'joonty/vim-tork.git'
+    Plugin 'rking/ag.vim'
+    Plugin 'roman/golden-ratio'
+    Plugin 'pelodelfuego/vim-swoop'
+    Plugin 'ctrlpvim/ctrlp.vim'
+    Plugin 'itchyny/lightline.vim'
+    Plugin 'godlygeek/tabular'
+    Plugin 'joonty/vim-phpqa.git'
+    Plugin 'shawncplus/phpcomplete.vim'
 
     " Language support
-    Bundle 'scrooloose/syntastic.git'
-    Bundle 'tpope/vim-markdown.git'
-    Bundle 'othree/html5.vim.git'
-    Bundle 'StanAngeloff/php.vim.git''
-    Bundle 'hdima/python-syntax.git'
+    Plugin 'scrooloose/syntastic.git'
+    Plugin 'tpope/vim-markdown.git'
+    Plugin 'othree/html5.vim.git'
+    Plugin 'StanAngeloff/php.vim.git'
+    Plugin 'hdima/python-syntax.git'
 
     " Colors
-    Bundle 'chriskempson/vim-tomorrow-theme'
-end
+    Plugin 'chriskempson/vim-tomorrow-theme'
 "}}}
+call vundle#end()
 
 filetype plugin indent on     " required!
 syntax enable
