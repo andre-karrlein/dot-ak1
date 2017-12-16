@@ -8,8 +8,6 @@
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="powerlevel9k/powerlevel9k"
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/.fonts/*.sh
 
 POWERLEVEL9K_MODE='awesome-fontconfig'
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
@@ -97,6 +95,7 @@ POWERLEVEL9K_RAM_ELEMENTS=(ram_free)
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  zsh-autosuggestions
   git
   composer
   docker
