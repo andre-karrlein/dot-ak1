@@ -32,6 +32,7 @@ call vundle#begin()
     Plugin 'godlygeek/tabular'
     Plugin 'joonty/vim-phpqa.git'
     Plugin 'shawncplus/phpcomplete.vim'
+    Plugin 'mhinz/vim-startify'
 
     " Language support
     Plugin 'scrooloose/syntastic.git'
@@ -47,11 +48,25 @@ call vundle#end()
 
 filetype plugin indent on     " required!
 syntax enable
-" colorscheme Tomorrow-Night
+colorscheme Tomorrow-Night
 runtime macros/matchit.vim
 let g:EasyMotion_leader_key = '\'
 
+let g:ascii = [
+    \ '           ____            ____   ___    ____',
+    \ '          /    \           |  |  /  /    |  |',
+    \ '         /  /\  \          |  | /  /     |  |',
+    \ '        /  /  \  \         |  |/  /      |  |',
+    \ '       /  /    \  \        |     /       |  |',
+    \ '      /  --------  \       |     \       |  |',
+    \ '     /  /        \  \      |  |\  \      |  |',
+    \ '    /  /          \  \     |  | \  \     |  |',
+    \ '   /  /            \  \    |  |  \  \    |  |',
+    \ '   ---              ---    ----   ---    ----',
+    \]
 
+let g:startify_custom_header =
+    \ 'map(g:ascii + startify#fortune#cowsay(), "\"    \".v:val")'
 
 "{{{ Functions
 "{{{ Toggle relative and absolute line numbers
