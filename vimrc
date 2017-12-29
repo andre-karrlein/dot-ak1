@@ -48,7 +48,10 @@ call vundle#end()
 
 filetype plugin indent on     " required!
 syntax enable
-colorscheme Tomorrow-Night
+
+set background=dark
+colorscheme solarized8_flat
+
 runtime macros/matchit.vim
 let g:EasyMotion_leader_key = '\'
 
