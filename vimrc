@@ -289,3 +289,6 @@ let g:lightline = {
 
 let g:golden_ratio_exclude_nonmodifiable = 1
 let g:golden_ratio_wrap_ignored = 0
+
+let g:phpqa_messdetector_autorun = 0
+let g:phpqa_codesniffer_autorun = 0
