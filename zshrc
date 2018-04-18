@@ -1,5 +1,10 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/andre/.oh-my-zsh
+# LINUX
+#export ZSH=/home/andre/.oh-my-zsh
+# MAC
+export ZSH=/Users/a.karrlein/.oh-my-zsh
+
+DEFAULT_USER=a.karrlein
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -10,7 +15,7 @@ POWERLEVEL9K_MODE='awesome-patched'
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
 POWERLEVEL9K_SHORTEN_STRATEGY="truncate_middle"
 POWERLEVEL9K_STATUS_VERBOSE=false
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon ram load context dir dir_writable vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon ram load dir dir_writable vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs command_execution_time time)
 POWERLEVEL9K_SHOW_CHANGESET=true
 POWERLEVEL9K_CHANGESET_HASH_LENGTH=6
@@ -59,8 +64,11 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+alias tmuxa="tmux attach -t"
+alias tmuxlist="tmux list-session"
 alias zshconfig="vim ~/.zshrc"
 alias mactags="ctags -f php.tags --language-force=PHP -R"
 alias linuxtags="ctags-exuberant -f php.tags --language-force=PHP -R"
 alias ll="ls -lah"
 alias vimconf="vim ~/.vimrc"
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
