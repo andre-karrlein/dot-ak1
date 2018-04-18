@@ -65,7 +65,8 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 alias tmuxa="tmux attach -t"
-alias tmuxlist="tmux list-session"
+alias tmuxl="tmux list-session"
+alias tmuxn="tmux new -s"
 alias zshconfig="vim ~/.zshrc"
 alias mactags="ctags -f php.tags --language-force=PHP -R"
 alias linuxtags="ctags-exuberant -f php.tags --language-force=PHP -R"
