@@ -54,6 +54,8 @@ colorscheme solarized8_flat
 
 runtime macros/matchit.vim
 let g:EasyMotion_leader_key = '\'
+set rtp+=~/.fzf
+
 
 let g:ascii = [
 \ '   ________  ___  __      _____                             ________  ________   ________  ________  _______           ___  __    ________  ________  ________  ___       _______   ___  _________',
@@ -179,7 +181,7 @@ nnoremap <Leader>h :nohl<CR>
 nnoremap <Leader>l :call LineNumberToggle()<cr>
 
 " Quick search
-nnoremap <C-f> :Ag ''<left>
+nnoremap <C-f> :FZF <left>
 " Quick search - word under cursor
 nnoremap <Leader>f :Ag <cword><CR>
 inoremap <Leader>f :Ag <cword><CR>
