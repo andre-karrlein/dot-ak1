@@ -40,6 +40,8 @@ call vundle#begin()
     Plugin 'othree/html5.vim.git'
     Plugin 'StanAngeloff/php.vim.git'
     Plugin 'hdima/python-syntax.git'
+    Plugin 'jerrymarino/icompleteme'
+    Plugin 'keith/swift.vim'
 
     " Colors
     Plugin 'chriskempson/vim-tomorrow-theme'
