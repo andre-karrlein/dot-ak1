@@ -150,8 +150,7 @@ syntax sync minlines=256
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,.DS_Store
 
 " Line numbers
-set relativenumber
-"}}}
+set number relativenumber
 
 let g:NERDTreeMapHelp = "h"
 
