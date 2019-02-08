@@ -77,9 +77,3 @@ alias linuxtags="ctags-exuberant -f php.tags --language-force=PHP -R"
 alias ll="ls -lah"
 alias vimconf="vim ~/.vimrc"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/andre/google-cloud-sdk/path.zsh.inc' ]; then . '/home/andre/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/home/andre/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/andre/google-cloud-sdk/completion.zsh.inc'; fi

@@ -35,12 +35,12 @@ call vundle#begin()
     Plugin 'mhinz/vim-startify'
 
     " Language support
-    Plugin 'scrooloose/syntastic.git'
+    "Plugin 'scrooloose/syntastic.git'
     Plugin 'tpope/vim-markdown.git'
     Plugin 'othree/html5.vim.git'
     Plugin 'StanAngeloff/php.vim.git'
     Plugin 'hdima/python-syntax.git'
-    Plugin 'jerrymarino/icompleteme'
+    "Plugin 'jerrymarino/icompleteme'
     Plugin 'keith/swift.vim'
 
     " Colors
