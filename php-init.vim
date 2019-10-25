@@ -37,6 +37,7 @@ Plug 'janko-m/vim-test'
 
 Plug 'skanehira/docker-compose.vim'
 Plug 'kevinhui/vim-docker-tools'
+Plug '907th/vim-auto-save'
 
 " Initialize plugin system
 call plug#end()
@@ -175,3 +176,5 @@ let test#php#phpunit#executable = 'docker-compose run --rm -w /var/www/code test
 nmap <silent> <leader>m :TestNearest<CR>
 nmap <silent> <leader>t :TestFile<CR>
 nmap <silent> <leader>a :TestSuite<CR>
+
+let g:auto_save = 1
