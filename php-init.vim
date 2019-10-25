@@ -74,6 +74,8 @@ let g:UltiSnipsExpandTrigger="<C-j>"
 let g:UltiSnipsJumpForwardTrigger="<C-j>"
 let g:UltiSnipsJumpBackwardTrigger="<C-b>"
 
+let g:ultisnips_php_scalar_types = 1
+
 let g:vim_php_refactoring_default_property_visibility = 'private'
 let g:vim_php_refactoring_default_method_visibility = 'private'
 let g:vim_php_refactoring_auto_validate_visibility = 1
