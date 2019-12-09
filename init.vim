@@ -31,6 +31,9 @@ Plug 'adoy/vim-php-refactoring-toolbox'
 Plug 'arnaud-lb/vim-php-namespace'
 Plug 'alvan/vim-php-manual'
 
+" Flutter
+Plug 'dart-lang/dart-vim-plugin'
+
 " Initialize plugin system
 call plug#end()
 
