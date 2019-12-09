@@ -34,6 +34,10 @@ Plug 'alvan/vim-php-manual'
 " Flutter
 Plug 'dart-lang/dart-vim-plugin'
 
+" Markdown
+Plug 'plasticboy/vim-markdown'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }}
+
 " Initialize plugin system
 call plug#end()
 
@@ -82,7 +86,7 @@ inoremap <C-s> <Esc>:w<CR>
 vnoremap <C-s> <Esc>:w<CR>
 nnoremap <Leader>h :nohl<CR>
 
-"Go
+" Go settings
 "run :GoBuild or :GoTestCompile based on the go file
 function! s:build_go_files()
     let l:file = expand('%')
@@ -121,11 +125,24 @@ let g:airline#extensions#ale#enabled = 1
 let g:gitgutter_sign_column_always = 1
 let g:tmux_navigator_save_on_switch = 1
 
+" testing settings
 let test#strategy = "neovim"
 let test#php#phpunit#executable = 'php vendor/bin/phpunit -c phpunit.xml'
 
 let g:auto_save = 1
 
+" markdown settings
+let g:mkdp_auto_close = 0
+let g:vim_markdown_folding_disabled = 1
+let g:vim_markdown_conceal = 0
+let g:tex_conceal = ""
+let g:vim_markdown_math = 1
+let g:vim_markdown_frontmatter = 1  " for YAML format
+let g:vim_markdown_toml_frontmatter = 1  " for TOML format
+let g:vim_markdown_json_frontmatter = 1  " for JSON format
+
+
+" coc.nvim settings
 set nobackup
 set nowritebackup
 set cmdheight=2
