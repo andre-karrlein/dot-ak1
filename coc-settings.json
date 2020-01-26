@@ -1,4 +1,15 @@
 {
+  "coc.preferences.colorSupport": true,
+  "suggest.triggerAfterInsertEnter": true,
+  "suggest.timeout": 2000,
+  "suggest.detailField": "abbr",
+  "suggest.snippetIndicator": "~",
+  "diagnostic.displayByAle": true,
+  "diagnostic.refreshOnInsertMode": true,
+  "diagnostic.signOffset": 999999,
+  "python.autoComplete.addBrackets": true,
+  "python.jediEnabled": true,
+  "suggest.noselect": false,
   "languageserver": {
     "golang": {
       "command": "go/bin/gopls",
