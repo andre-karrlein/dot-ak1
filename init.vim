@@ -74,9 +74,34 @@ let g:lightline = {
 
 " AK1 settings
 
+set termguicolors
 let g:material_style='oceanic'
 set background=dark
 colorscheme vim-material
+highlight Pmenu guibg='00010a' guifg=white              " popup menu colors
+highlight Comment gui=bold                              " bold comments
+
+highlight Normal gui=none
+highlight NonText guibg=none
+highlight clear SignColumn                              " use number color for sign column color
+hi Search guibg=orange                                  " search string highlight color
+autocmd ColorScheme * highlight VertSplit cterm=NONE    " split color
+hi NonText guifg=bg                                     " mask ~ on empty lines
+hi clear CursorLineNr                                   " use the theme color for relative number
+hi CursorLineNr gui=bold                                " make relative number bold
+
+" colors for git (especially the gutter)
+hi DiffAdd guibg='#0f111a'
+hi DiffChange guibg='#0f111a'
+
+" coc multi cursor highlight color
+hi CocCursorRange guibg=#b16286 guifg=#ebdbb2
+
+" Ale
+highlight ALEErrorSign ctermfg=9 ctermbg=15 guifg=#C30500
+highlight ALEWarningSign ctermfg=11 ctermbg=15 guifg=#FFA500
+
+
 set mouse=a
 "<Leader> key is ,
 let mapleader=","
@@ -324,8 +349,8 @@ function! Fzf_dev()
 endfunction
 
 " custom mappings
-nnoremap <silent> <leader>f :call Fzf_dev()<CR>
-map <F4> :TagbarToggle<CR>
+nnoremap <silent> <leader>f :FZF<CR>
+map <leader>T :TagbarToggle<CR>
 map <leader>/ :Ag<CR>
 
 " coc plugins
