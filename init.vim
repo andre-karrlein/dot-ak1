@@ -372,4 +372,7 @@ let g:coc_global_extensions = [
             \'coc-flutter',
             \'coc-markdownlint',
             \'coc-vetur',
+            \'coc-marketplace',
+            \'coc-java',
+            \'coc-docker'
             \]
