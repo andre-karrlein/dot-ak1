@@ -10,7 +10,6 @@ Plug 'itchyny/lightline.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'mhinz/vim-startify'
 Plug 'mhartington/oceanic-next'
-Plug 'ryanoasis/vim-devicons'
 Plug 'hzchirs/vim-material'
 Plug 'gregsexton/MatchTag'
 Plug 'w0rp/ale'
@@ -28,6 +27,9 @@ Plug 'Yggdroot/indentLine'
 Plug 'google/vim-searchindex'
 Plug 'majutsushi/tagbar'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'chrisbra/Colorizer'
+Plug 'junegunn/goyo.vim'
+Plug 'amix/vim-zenroom2'
 
 " GO
 Plug 'fatih/vim-go', {'do': ':GoUpdateBinaries'}
@@ -352,6 +354,10 @@ endfunction
 nnoremap <silent> <leader>f :FZF<CR>
 map <leader>T :TagbarToggle<CR>
 map <leader>/ :Ag<CR>
+map <leader>G :Goyo<CR>
+map <leader>!G :Goyo!<CR>
+nmap <space>e :CocCommand explorer<CR>
+let g:goyo_width = 120
 
 " coc plugins
 let g:coc_global_extensions = [
@@ -374,5 +380,6 @@ let g:coc_global_extensions = [
             \'coc-vetur',
             \'coc-marketplace',
             \'coc-java',
-            \'coc-docker'
+            \'coc-docker',
+            \'coc-explorer'
             \]
